@@ -156,7 +156,24 @@ NAVIGATION_ALT_LINKS = {
 }
 
 # Name of the theme to use.
-THEME = "bootblog4"
+THEME = "reveal"
+
+REVEAL_THEME = "night"  # Other options: 'white', 'night', 'simple', etc.
+
+
+# conf.py
+REVEAL_CONFIG = {
+    "width": 1200,  # Adjust this for larger slides
+    "height": 800,
+    "margin": 0.1,
+    "minScale": 0.5,  # Allows scaling for mobile
+    "maxScale": 2.0
+}
+
+REVEAL_CONFIG["scroll"] = True
+
+
+
 
 # A theme color. In default themes, it might be displayed by some browsers as
 # the browser UI color (eg. Chrome on Android). Other themes might also use it
@@ -171,6 +188,7 @@ THEME_COLOR = '#5670d4'
 #                      navbar_custom_bg (defaults to '')
 
 # Config for bootblog4:
+
 THEME_CONFIG = {
     DEFAULT_LANG: {
         # Show the latest featured post in a large box, with the previewimage as its background.
@@ -188,6 +206,19 @@ THEME_CONFIG = {
         'sidebar': ''
     }
 }
+"""
+NAVIGATION_LINKS = {
+    DEFAULT_LANG: (
+        ('/index.html', 'Home', 'fa fa-home'),
+        ('/archive.html', 'Archives', 'fa fa-folder-open'),
+        ('/categories/index.html', 'Tags', 'fa fa-tags'),
+        ('/rss.xml', 'RSS', 'fa fa-rss'),
+        ('https://getnikola.com', 'About me', 'fa fa-user'),
+        ('https://twitter.com/getnikola', 'My Twitter', 'fab fa-twitter'),
+        ('https://github.com/getnikola', 'My Github', 'fab fa-github'),
+    )
+}
+"""
 # Config for bootstrap4:
 # THEME_CONFIG = {
 #     DEFAULT_LANG: {
@@ -236,13 +267,13 @@ THEME_CONFIG = {
 #     )
 
 POSTS = (
-    # ("posts/*.rst", "posts", "post.tmpl"),
+     ("posts/*.rst", "posts", "post.tmpl"),
     ("posts/*.md", "posts", "post.tmpl"),
     ("posts/*.txt", "posts", "post.tmpl"),
     ("posts/*.html", "posts", "post.tmpl"),
 )
 PAGES = (
-    # ("pages/*.rst", "pages", "page.tmpl"),
+     ("pages/*.rst", "pages", "page.tmpl"),
     ("pages/*.md", "pages", "page.tmpl"),
     ("pages/*.txt", "pages", "page.tmpl"),
     ("pages/*.html", "pages", "page.tmpl"),
@@ -1410,6 +1441,11 @@ WARN_ABOUT_TAG_METADATA = False
 # Put in global_context things you want available on all your templates.
 # It can be anything, data, functions, modules, etc.
 GLOBAL_CONTEXT = {}
+
+GLOBAL_CONTEXT.update({
+    'subtheme': 'sky',
+    'transition': 'cube'
+})
 
 # Add functions here and they will be called with template
 # GLOBAL_CONTEXT as parameter when the template is about to be
