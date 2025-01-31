@@ -6,40 +6,12 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
-  <loc>https://aaronswartz.rbind.io/authors/aaron-swartz.xml</loc>
-  <lastmod>2025-01-31T15:46:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://aaronswartz.rbind.io/authors/roberto-alsina.xml</loc>
-  <lastmod>2025-01-31T08:21:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://aaronswartz.rbind.io/categories/blog.xml</loc>
-  <lastmod>2025-01-31T08:21:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://aaronswartz.rbind.io/categories/cat_nikola.xml</loc>
-  <lastmod>2025-01-31T08:21:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://aaronswartz.rbind.io/categories/demo.xml</loc>
-  <lastmod>2025-01-31T08:21:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://aaronswartz.rbind.io/categories/nikola.xml</loc>
-  <lastmod>2025-01-31T08:21:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://aaronswartz.rbind.io/categories/python.xml</loc>
-  <lastmod>2025-01-31T08:21:00Z</lastmod>
- </sitemap>
- <sitemap>
   <loc>https://aaronswartz.rbind.io/galleries/demo/rss.xml</loc>
-  <lastmod>2025-01-31T16:15:00Z</lastmod>
+  <lastmod>2025-01-31T18:01:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://aaronswartz.rbind.io/galleries/rss.xml</loc>
-  <lastmod>2025-01-31T16:15:00Z</lastmod>
+  <lastmod>2025-01-31T18:01:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://aaronswartz.rbind.io/rss.xml</loc>
@@ -47,6 +19,6 @@
  </sitemap>
  <sitemap>
   <loc>https://aaronswartz.rbind.io/sitemap.xml</loc>
-  <lastmod>2025-01-31T16:15:00Z</lastmod>
+  <lastmod>2025-01-31T18:01:00Z</lastmod>
  </sitemap>
 </sitemapindex>

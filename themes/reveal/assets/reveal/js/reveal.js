@@ -30,16 +30,16 @@ var Reveal = (function(){
 			maxScale: 1.0,
 
 			// Display controls in the bottom right corner
-			controls: true,
+			controls: false,
 
 			// Display a presentation progress bar
 			progress: true,
 
 			// Display the page number of the current slide
-			slideNumber: true,
+			slideNumber: false,
 
 			// Push each slide change to the browser history
-			history: true,
+			history: false,
 
 			// Enable keyboard shortcuts for navigation
 			keyboard: true,
@@ -54,7 +54,7 @@ var Reveal = (function(){
 			touch: true,
 
 			// Loop the presentation
-			loop: true,
+			loop: false,
 
 			// Change the presentation direction to be RTL
 			rtl: false,
@@ -69,7 +69,7 @@ var Reveal = (function(){
 			// Number of milliseconds between automatically proceeding to the
 			// next slide, disabled when set to 0, this value can be overwritten
 			// by using a data-autoslide attribute on your slides
-			autoSlide: 5000,
+			autoSlide: 0,
 
 			// Stop auto-sliding after user input
 			autoSlideStoppable: true,

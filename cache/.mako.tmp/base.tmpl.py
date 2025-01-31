@@ -5,7 +5,7 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1738344691.0815253
+_modified_time = 1738348788.9601295
 _enable_loop = True
 _template_filename = 'themes/reveal/templates/base.tmpl'
 _template_uri = 'base.tmpl'
@@ -33,35 +33,34 @@ def render_body(context,**pageargs):
         _import_ns = {}
         _mako_get_namespace(context, 'base')._populate(_import_ns, ['*'])
         _mako_get_namespace(context, 'reveal')._populate(_import_ns, ['*'])
-        lang = _import_ns.get('lang', context.get('lang', UNDEFINED))
-        search_form = _import_ns.get('search_form', context.get('search_form', UNDEFINED))
-        set_locale = _import_ns.get('set_locale', context.get('set_locale', UNDEFINED))
-        len = _import_ns.get('len', context.get('len', UNDEFINED))
-        body_end = _import_ns.get('body_end', context.get('body_end', UNDEFINED))
-        template_hooks = _import_ns.get('template_hooks', context.get('template_hooks', UNDEFINED))
-        abs_link = _import_ns.get('abs_link', context.get('abs_link', UNDEFINED))
-        logo_url = _import_ns.get('logo_url', context.get('logo_url', UNDEFINED))
-        def content():
-            return render_content(context._locals(__M_locals))
-        translations = _import_ns.get('translations', context.get('translations', UNDEFINED))
+        reveal = _mako_get_namespace(context, 'reveal')
         def sourcelink():
             return render_sourcelink(context._locals(__M_locals))
-        content_footer = _import_ns.get('content_footer', context.get('content_footer', UNDEFINED))
-        def custom_reveal():
-            return render_custom_reveal(context._locals(__M_locals))
-        show_blog_title = _import_ns.get('show_blog_title', context.get('show_blog_title', UNDEFINED))
-        blog_title = _import_ns.get('blog_title', context.get('blog_title', UNDEFINED))
-        reveal = _mako_get_namespace(context, 'reveal')
-        def extra_head():
-            return render_extra_head(context._locals(__M_locals))
-        base = _mako_get_namespace(context, 'base')
-        def belowtitle():
-            return render_belowtitle(context._locals(__M_locals))
-        show_sourcelink = _import_ns.get('show_sourcelink', context.get('show_sourcelink', UNDEFINED))
         def extra_js():
             return render_extra_js(context._locals(__M_locals))
+        def custom_reveal():
+            return render_custom_reveal(context._locals(__M_locals))
+        body_end = _import_ns.get('body_end', context.get('body_end', UNDEFINED))
+        def content():
+            return render_content(context._locals(__M_locals))
+        def belowtitle():
+            return render_belowtitle(context._locals(__M_locals))
+        len = _import_ns.get('len', context.get('len', UNDEFINED))
+        translations = _import_ns.get('translations', context.get('translations', UNDEFINED))
+        set_locale = _import_ns.get('set_locale', context.get('set_locale', UNDEFINED))
+        logo_url = _import_ns.get('logo_url', context.get('logo_url', UNDEFINED))
+        abs_link = _import_ns.get('abs_link', context.get('abs_link', UNDEFINED))
+        show_sourcelink = _import_ns.get('show_sourcelink', context.get('show_sourcelink', UNDEFINED))
+        def extra_head():
+            return render_extra_head(context._locals(__M_locals))
+        content_footer = _import_ns.get('content_footer', context.get('content_footer', UNDEFINED))
+        show_blog_title = _import_ns.get('show_blog_title', context.get('show_blog_title', UNDEFINED))
+        search_form = _import_ns.get('search_form', context.get('search_form', UNDEFINED))
+        template_hooks = _import_ns.get('template_hooks', context.get('template_hooks', UNDEFINED))
+        lang = _import_ns.get('lang', context.get('lang', UNDEFINED))
+        base = _mako_get_namespace(context, 'base')
+        blog_title = _import_ns.get('blog_title', context.get('blog_title', UNDEFINED))
         __M_writer = context.writer()
-        __M_writer('<script>\n        Reveal.initialize({\n            scroll: true\n        });\n    \n</script>\n\n')
         __M_writer('\n')
         __M_writer('\n')
         __M_writer(str(set_locale(lang)))
@@ -137,7 +136,7 @@ def render_body(context,**pageargs):
 
         __M_writer('\n   ')
         __M_writer(str(body_end))
-        __M_writer('\n</body>\n\n\n')
+        __M_writer('\n</body>\n')
         return ''
     finally:
         context.caller_stack._pop_frame()
@@ -164,11 +163,11 @@ def render_belowtitle(context,**pageargs):
         _import_ns = {}
         _mako_get_namespace(context, 'base')._populate(_import_ns, ['*'])
         _mako_get_namespace(context, 'reveal')._populate(_import_ns, ['*'])
-        translations = _import_ns.get('translations', context.get('translations', UNDEFINED))
-        len = _import_ns.get('len', context.get('len', UNDEFINED))
         base = _mako_get_namespace(context, 'base')
+        translations = _import_ns.get('translations', context.get('translations', UNDEFINED))
         def belowtitle():
             return render_belowtitle(context)
+        len = _import_ns.get('len', context.get('len', UNDEFINED))
         __M_writer = context.writer()
         __M_writer('\n')
         if len(translations) > 1:
@@ -239,6 +238,6 @@ def render_extra_js(context,**pageargs):
 
 """
 __M_BEGIN_METADATA
-{"filename": "themes/reveal/templates/base.tmpl", "uri": "base.tmpl", "source_encoding": "utf-8", "line_map": {"23": 9, "26": 10, "29": 0, "64": 1, "65": 9, "66": 10, "67": 11, "68": 11, "69": 12, "70": 12, "71": 13, "72": 13, "77": 16, "78": 17, "79": 17, "80": 34, "81": 34, "82": 35, "83": 36, "84": 36, "85": 36, "86": 36, "87": 36, "88": 38, "89": 39, "90": 40, "91": 40, "92": 40, "93": 42, "94": 46, "95": 46, "96": 47, "97": 47, "98": 49, "99": 50, "100": 50, "101": 50, "102": 52, "107": 57, "108": 58, "109": 59, "114": 59, "115": 61, "116": 61, "117": 61, "122": 71, "123": 75, "124": 75, "129": 77, "130": 82, "131": 82, "132": 87, "133": 87, "138": 96, "139": 97, "140": 97, "146": 14, "155": 14, "161": 53, "173": 53, "174": 54, "175": 55, "176": 55, "177": 55, "178": 57, "184": 59, "198": 71, "212": 77, "226": 96, "240": 226}}
+{"filename": "themes/reveal/templates/base.tmpl", "uri": "base.tmpl", "source_encoding": "utf-8", "line_map": {"23": 2, "26": 3, "29": 0, "64": 2, "65": 3, "66": 4, "67": 4, "68": 5, "69": 5, "70": 6, "71": 6, "76": 9, "77": 10, "78": 10, "79": 27, "80": 27, "81": 28, "82": 29, "83": 29, "84": 29, "85": 29, "86": 29, "87": 31, "88": 32, "89": 33, "90": 33, "91": 33, "92": 35, "93": 39, "94": 39, "95": 40, "96": 40, "97": 42, "98": 43, "99": 43, "100": 43, "101": 45, "106": 50, "107": 51, "108": 52, "113": 52, "114": 54, "115": 54, "116": 54, "121": 64, "122": 68, "123": 68, "128": 70, "129": 75, "130": 75, "131": 80, "132": 80, "137": 89, "138": 90, "139": 90, "145": 7, "154": 7, "160": 46, "172": 46, "173": 47, "174": 48, "175": 48, "176": 48, "177": 50, "183": 52, "197": 64, "211": 70, "225": 89, "239": 225}}
 __M_END_METADATA
 """
