@@ -3,7 +3,7 @@ name: Build and Deploy Nikola to GitHub Pages
 on:
   push:
     branches:
-      - main  # or the branch you're pushing to
+      - master  # or the branch you're pushing to
 
 jobs:
   nikola_build:
