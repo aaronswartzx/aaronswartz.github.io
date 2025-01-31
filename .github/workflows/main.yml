@@ -13,7 +13,7 @@ jobs:
     steps:
     - name: Check out code
       uses: actions/checkout@v2
-      
+
     - name: Configure Git to treat the directory as safe
       run: git config --global --add safe.directory /github/workspace
 
