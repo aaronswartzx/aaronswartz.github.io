@@ -17,6 +17,10 @@ jobs:
     - name: Build and Deploy Nikola with Safe Directory Fix
       run: |
         docker run --rm -v $GITHUB_WORKSPACE:/workspace -e GITHUB_WORKSPACE=$GITHUB_WORKSPACE -e GITHUB_TOKEN=$GITHUB_TOKEN \
-        ubuntu:latest bash -c "git config --global --add safe.directory /workspace && nikola build && nikola deploy"
+        ubuntu:latest bash -c "
+          apt-get update && apt-get install -y git && 
+          git config --global --add safe.directory /workspace && 
+          nikola build && 
+          nikola deploy"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
