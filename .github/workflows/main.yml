@@ -1,15 +1,22 @@
-on: [push]
+name: Build and Deploy Nikola to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master  # or the branch you're pushing to
 
 jobs:
   nikola_build:
     runs-on: ubuntu-latest
     name: 'Deploy Nikola to GitHub Pages'
+    
     steps:
-    - name: Configure Git to treat the directory as safe
-      run: git config --global --add safe.directory /github/workspace
-    - name: Check out
+    - name: Check out code
       uses: actions/checkout@v2
-    - name: Build and Deploy Nikola
-      uses: getnikola/nikola-action@v4
-      with:
-        dry_run: false
+
+    - name: Build and Deploy Nikola with Safe Directory Fix
+      run: |
+        docker run --rm -v $GITHUB_WORKSPACE:/workspace -e GITHUB_WORKSPACE=$GITHUB_WORKSPACE -e GITHUB_TOKEN=$GITHUB_TOKEN \
+        ubuntu:latest bash -c "git config --global --add safe.directory /workspace && nikola build && nikola deploy"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
