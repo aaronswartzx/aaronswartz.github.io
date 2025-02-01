@@ -14,8 +14,12 @@
   <lastmod>2025-02-01T05:02:00Z</lastmod>
  </url>
  <url>
+  <loc>https://aaronswartz.rbind.io/2025/</loc>
+  <lastmod>2025-02-01T07:11:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://aaronswartz.rbind.io/archive.html</loc>
-  <lastmod>2025-02-01T07:02:00Z</lastmod>
+  <lastmod>2025-02-01T07:11:00Z</lastmod>
  </url>
  <url>
   <loc>https://aaronswartz.rbind.io/assets/reveal/</loc>
@@ -67,7 +71,11 @@
  </url>
  <url>
   <loc>https://aaronswartz.rbind.io/categories/</loc>
-  <lastmod>2025-02-01T07:02:00Z</lastmod>
+  <lastmod>2025-02-01T07:11:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://aaronswartz.rbind.io/categories/love/</loc>
+  <lastmod>2025-02-01T07:11:00Z</lastmod>
  </url>
  <url>
   <loc>https://aaronswartz.rbind.io/galleries/</loc>
@@ -144,6 +152,10 @@
  <url>
   <loc>https://aaronswartz.rbind.io/pages/theming/</loc>
   <lastmod>2025-01-31T16:00:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://aaronswartz.rbind.io/posts/title-unrequited-love/</loc>
+  <lastmod>2025-02-01T07:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://aaronswartz.rbind.io/posts/title-what-is-reality/</loc>
