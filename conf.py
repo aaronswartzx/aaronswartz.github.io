@@ -256,15 +256,17 @@ NAVIGATION_LINKS = {
 #     )
 
 POSTS = (
-     ("posts/*.rst", "posts", "post.tmpl"),
+     
     ("posts/*.md", "posts", "post.tmpl"),
     ("posts/*.txt", "posts", "post.tmpl"),
+    ("posts/*.rst", "posts", "post.tmpl"),
     ("posts/*.html", "posts", "post.tmpl"),
 )
 PAGES = (
-     ("pages/*.rst", "pages", "page.tmpl"),
+     
     ("pages/*.md", "pages", "page.tmpl"),
     ("pages/*.txt", "pages", "page.tmpl"),
+    ("pages/*.rst", "pages", "page.tmpl"),
     ("pages/*.html", "pages", "page.tmpl"),
 )
 
@@ -334,8 +336,9 @@ TIMEZONE = "Europe/London"
 # 'markdown' is Markdown
 # 'html' assumes the file is HTML and just copies it
 COMPILERS = {
-    "rest": ['.rst', '.txt'],
+    
     "markdown": ['.md', '.mdown', '.markdown'],
+    "rest": ['.rst', '.txt'],
     "textile": ['.textile'],
     "txt2tags": ['.t2t'],
     "bbcode": ['.bb'],
