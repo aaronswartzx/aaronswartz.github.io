@@ -5,7 +5,7 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1738392002.5155308
+_modified_time = 1738392063.925899
 _enable_loop = True
 _template_filename = 'themes/reveal/templates/index.tmpl'
 _template_uri = 'index.tmpl'
@@ -33,17 +33,17 @@ def render_body(context,**pageargs):
     __M_caller = context.caller_stack._push_frame()
     try:
         __M_locals = __M_dict_builtin(pageargs=pageargs)
-        site_has_comments = context.get('site_has_comments', UNDEFINED)
-        date_format = context.get('date_format', UNDEFINED)
-        index_teasers = context.get('index_teasers', UNDEFINED)
-        def custom_reveal():
-            return render_custom_reveal(context._locals(__M_locals))
-        posts = context.get('posts', UNDEFINED)
         def content():
             return render_content(context._locals(__M_locals))
         comments = _mako_get_namespace(context, 'comments')
-        messages = context.get('messages', UNDEFINED)
+        def custom_reveal():
+            return render_custom_reveal(context._locals(__M_locals))
+        index_teasers = context.get('index_teasers', UNDEFINED)
+        posts = context.get('posts', UNDEFINED)
+        date_format = context.get('date_format', UNDEFINED)
         helper = _mako_get_namespace(context, 'helper')
+        site_has_comments = context.get('site_has_comments', UNDEFINED)
+        messages = context.get('messages', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n')
         __M_writer('\n')
@@ -66,15 +66,15 @@ def render_body(context,**pageargs):
 def render_content(context,**pageargs):
     __M_caller = context.caller_stack._push_frame()
     try:
-        site_has_comments = context.get('site_has_comments', UNDEFINED)
-        date_format = context.get('date_format', UNDEFINED)
-        index_teasers = context.get('index_teasers', UNDEFINED)
-        posts = context.get('posts', UNDEFINED)
         def content():
             return render_content(context)
         comments = _mako_get_namespace(context, 'comments')
-        messages = context.get('messages', UNDEFINED)
+        index_teasers = context.get('index_teasers', UNDEFINED)
+        posts = context.get('posts', UNDEFINED)
+        date_format = context.get('date_format', UNDEFINED)
         helper = _mako_get_namespace(context, 'helper')
+        site_has_comments = context.get('site_has_comments', UNDEFINED)
+        messages = context.get('messages', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n')
         for post in posts:
