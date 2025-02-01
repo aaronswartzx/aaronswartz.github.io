@@ -158,19 +158,8 @@ NAVIGATION_ALT_LINKS = {
 # Name of the theme to use.
 THEME = "reveal"
 
-REVEAL_THEME = "night"  # Other options: 'white', 'night', 'simple', etc.
 
 
-# conf.py
-REVEAL_CONFIG = {
-    "width": 1200,  # Adjust this for larger slides
-    "height": 800,
-    "margin": 0.1,
-    "minScale": 0.5,  # Allows scaling for mobile
-    "maxScale": 2.0
-}
-
-REVEAL_CONFIG["scroll"] = True
 
 
 
@@ -1016,7 +1005,7 @@ LICENSE = ""
 
 # A small copyright notice for the page footer (in HTML).
 # (translatable)
-CONTENT_FOOTER = 'Contents &copy; {date}         <a href="mailto:{email}">{author}</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         {license}'
+CONTENT_FOOTER = 'Contents &copy; {date}         <a href="mailto:{email}">{author}</a>'
 
 # Things that will be passed to CONTENT_FOOTER.format().  This is done
 # for translatability, as dicts are not formattable.  Nikola will
