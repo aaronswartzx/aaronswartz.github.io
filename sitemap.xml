@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://aaronswartz.rbind.io/</loc>
-  <lastmod>2025-02-01T05:02:00Z</lastmod>
+  <lastmod>2025-02-01T05:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://aaronswartz.rbind.io/2024/</loc>
@@ -19,7 +19,7 @@
  </url>
  <url>
   <loc>https://aaronswartz.rbind.io/archive.html</loc>
-  <lastmod>2025-02-01T05:02:00Z</lastmod>
+  <lastmod>2025-02-01T06:40:00Z</lastmod>
  </url>
  <url>
   <loc>https://aaronswartz.rbind.io/assets/reveal/</loc>
@@ -152,6 +152,10 @@
  <url>
   <loc>https://aaronswartz.rbind.io/pages/theming/</loc>
   <lastmod>2025-01-31T16:00:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://aaronswartz.rbind.io/posts/love/</loc>
+  <lastmod>2025-02-01T06:40:00Z</lastmod>
  </url>
  <url>
   <loc>https://aaronswartz.rbind.io/posts/my-python-template-for-problem-solving/</loc>
