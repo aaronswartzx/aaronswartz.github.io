@@ -7,7 +7,11 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://aaronswartz.rbind.io/</loc>
-  <lastmod>2025-01-31T16:00:00Z</lastmod>
+  <lastmod>2025-02-01T05:02:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://aaronswartz.rbind.io/2024/</loc>
+  <lastmod>2025-02-01T05:02:00Z</lastmod>
  </url>
  <url>
   <loc>https://aaronswartz.rbind.io/2025/</loc>
@@ -15,7 +19,7 @@
  </url>
  <url>
   <loc>https://aaronswartz.rbind.io/archive.html</loc>
-  <lastmod>2025-01-31T18:01:00Z</lastmod>
+  <lastmod>2025-02-01T05:02:00Z</lastmod>
  </url>
  <url>
   <loc>https://aaronswartz.rbind.io/assets/reveal/</loc>
@@ -67,7 +71,11 @@
  </url>
  <url>
   <loc>https://aaronswartz.rbind.io/categories/</loc>
-  <lastmod>2025-01-31T17:31:00Z</lastmod>
+  <lastmod>2025-02-01T04:42:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://aaronswartz.rbind.io/categories/love/</loc>
+  <lastmod>2025-02-01T04:42:00Z</lastmod>
  </url>
  <url>
   <loc>https://aaronswartz.rbind.io/galleries/</loc>
@@ -87,7 +95,7 @@
  </url>
  <url>
   <loc>https://aaronswartz.rbind.io/listings/hello.py.html</loc>
-  <lastmod>2025-01-31T18:01:00Z</lastmod>
+  <lastmod>2025-02-01T04:16:00Z</lastmod>
  </url>
  <url>
   <loc>https://aaronswartz.rbind.io/pages/about-nikola/</loc>
@@ -148,6 +156,10 @@
  <url>
   <loc>https://aaronswartz.rbind.io/posts/my-python-template-for-problem-solving/</loc>
   <lastmod>2025-01-31T16:00:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://aaronswartz.rbind.io/posts/title-unrequited-love/</loc>
+  <lastmod>2025-02-01T04:42:00Z</lastmod>
  </url>
  <url>
   <loc>https://aaronswartz.rbind.io/posts/title-what-is-reality/</loc>
